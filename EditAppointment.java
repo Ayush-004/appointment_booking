@@ -27,7 +27,7 @@ public class EditAppointment extends javax.swing.JFrame {
         initComponents();
          try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();
                 int y=0;
                     ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id="+ViewAppointments.r);
@@ -289,7 +289,7 @@ public class EditAppointment extends javax.swing.JFrame {
         date2 = dcn.format(jCalendar1.getDate());
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                 stmt.executeQuery("use doctorappointment");
                 stmt.executeUpdate("update appointmentbooking set dateofapp = '"+date2+"' where id ="+nop+" and dateofapp > (select curdate())");

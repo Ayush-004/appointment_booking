@@ -24,7 +24,7 @@ public class AppointmentHistory extends javax.swing.JFrame {
         initComponents();
          try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                 ResultSet rp = stmt.executeQuery("select doctor.name,appointmentbooking.dateofapp from appointmentbooking,doctor where doctor.doc_id=appointmentbooking.doc_id and (appointmentbooking.id="+Login.id1+" and appointmentbooking.dateofapp<curdate())");
                 //rp.next();

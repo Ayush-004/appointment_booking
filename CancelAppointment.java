@@ -24,7 +24,7 @@ public class CancelAppointment extends javax.swing.JFrame {
         initComponents();
          try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();
                // int y=0;
                     ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id="+ViewAppointments.r);
@@ -262,7 +262,7 @@ public class CancelAppointment extends javax.swing.JFrame {
         // TODO add your handling code here:
          try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                 //stmt.executeQuery("use doctorappointment");
                 stmt.executeUpdate("delete from appointmentbooking where appoint_id="+appid);

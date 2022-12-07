@@ -29,7 +29,7 @@ public class ManageProfile extends javax.swing.JFrame{
        
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                
                 ResultSet rp = stmt.executeQuery("select * from user where username='"+user1+"'");
@@ -398,7 +398,7 @@ public class ManageProfile extends javax.swing.JFrame{
         Login lo = new Login();
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                 //stmt.executeQuery("use doctorappointment");
                 //ResultSet rs=stmt.executeQuery("select * from user");

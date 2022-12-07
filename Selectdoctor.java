@@ -64,7 +64,7 @@ public class Selectdoctor extends javax.swing.JFrame {
 //        }
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                 ResultSet rp = stmt.executeQuery("select * from doctor where specailization='"+docname1+"'");
                 x=70;
@@ -180,7 +180,7 @@ public class Selectdoctor extends javax.swing.JFrame {
                         try
                         {
                             Class.forName("com.mysql.cj.jdbc.Driver");
-                            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                             Statement stmt=conn.createStatement();  
                             ResultSet rp = stmt.executeQuery("select * from doctor where doc_id="+r);
                             rp.next();

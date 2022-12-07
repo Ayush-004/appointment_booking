@@ -251,7 +251,8 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
          try {
            Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
+//             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment?useSSL=false&serverTimezone=UTC","sa","Pass@word");
                 Statement stmt=conn.createStatement();  
                 //stmt.executeQuery("use doctorappointment");
                 ResultSet rs=stmt.executeQuery("select * from user");
