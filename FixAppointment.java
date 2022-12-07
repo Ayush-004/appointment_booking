@@ -22,7 +22,7 @@ public class FixAppointment extends javax.swing.JFrame {
     public FixAppointment() {
         initComponents();
         try {
-           Class.forName("com.mysql.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();  
                 ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id=(select max(appoint_id) from appointmentbooking)");

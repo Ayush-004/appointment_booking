@@ -26,7 +26,7 @@ public class EditAppointment extends javax.swing.JFrame {
     public EditAppointment() {
         initComponents();
          try {
-           Class.forName("com.mysql.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();
                 int y=0;
@@ -288,10 +288,10 @@ public class EditAppointment extends javax.swing.JFrame {
         SimpleDateFormat dcn = new SimpleDateFormat("yyyy-MM-dd");
         date2 = dcn.format(jCalendar1.getDate());
         try {
-           Class.forName("com.mysql.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
+           Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();  
-                //stmt.executeQuery("use doctorappointment");
+                stmt.executeQuery("use doctorappointment");
                 stmt.executeUpdate("update appointmentbooking set dateofapp = '"+date2+"' where id ="+nop+" and dateofapp > (select curdate())");
                 JOptionPane.showMessageDialog(rootPane,"Your Appointment Date is changed to "+date2);
                 ChooseAppointment ca = new ChooseAppointment();

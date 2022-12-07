@@ -231,7 +231,7 @@ public class ForgotPassword extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane,"Wrong Password");
         }
          try {
-           Class.forName("com.mysql.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();  
                 //stmt.executeQuery("use doctorappointment");

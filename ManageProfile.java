@@ -28,7 +28,7 @@ public class ManageProfile extends javax.swing.JFrame{
        user1 = log.username1;
        
         try {
-           Class.forName("com.mysql.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();  
                
@@ -397,7 +397,7 @@ public class ManageProfile extends javax.swing.JFrame{
         //</editor-fold>
         Login lo = new Login();
         try {
-           Class.forName("com.mysql.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();  
                 //stmt.executeQuery("use doctorappointment");

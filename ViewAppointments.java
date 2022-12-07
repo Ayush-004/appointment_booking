@@ -28,7 +28,7 @@ public class ViewAppointments extends javax.swing.JFrame {
     public ViewAppointments() {
         initComponents();
          try {
-           Class.forName("com.mysql.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
                 Statement stmt=conn.createStatement();  
                 ResultSet rp = stmt.executeQuery("select a.appoint_id,d.name,a.dateofapp,a.time from appointmentbooking as a,doctor as d where a.doc_id=d.doc_id and (a.dateofapp >=(select curdate()) and id="+Login.id1+")");
