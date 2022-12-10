@@ -26,6 +26,7 @@ public class Signup extends javax.swing.JFrame {
     public static String blood;
     public static String contact1;
     public static String city1;
+    public static int i=2;
     /**
      * Creates new form Signup
      */
@@ -335,11 +336,15 @@ public class Signup extends javax.swing.JFrame {
                 ResultSet rs=stmt.executeQuery("select * from user");
                if(z==0)
                {
+                   System.out.println("z=0");
                    JOptionPane.showMessageDialog(rootPane,"Please enter valid username");
                }
-                  if(t==1&&pp!=0&&z==1&&y==0)
+                  if(z!=0)
                   {
-                    stmt.executeUpdate("insert into user(username,password,gender,blood_group,Contact,city)"+ "values('"+username1+"','"+pass+"','"+gender1+"','"+blood+"',"+contact1+",'"+city1+"')");
+                      System.out.println("z=1");
+                    stmt.executeUpdate("insert into user(username,password,gender,blood_group,Contact,city)"+ "values('"+username.getText()+"','"+password.getText()+"','"+gender1+"','"+blood+"',"+Contact.getText()+",'"+city.getText()+"')");
+                    i++;
+                      System.out.println(username.getText());
                   }
                 conn.close();
         }

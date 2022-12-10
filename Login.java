@@ -261,7 +261,7 @@ public class Login extends javax.swing.JFrame {
                     //System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3)); 
                     user = rs.getString(2);
                     pass = rs.getString(3);
-                    if(user.equals(username1)&&pass.equals(password1))
+                    if(user.equals(username.getText())&&pass.equals(password.getText()))
                     {
                         //System.out.println("Welcome " + user);
                         id1=rs.getInt(1);
