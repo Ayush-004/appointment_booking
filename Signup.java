@@ -26,7 +26,7 @@ public class Signup extends javax.swing.JFrame {
     public static String blood;
     public static String contact1;
     public static String city1;
-    public static int i=2;
+
     /**
      * Creates new form Signup
      */
@@ -343,7 +343,7 @@ public class Signup extends javax.swing.JFrame {
                   {
                       System.out.println("z=1");
                     stmt.executeUpdate("insert into user(username,password,gender,blood_group,Contact,city)"+ "values('"+username.getText()+"','"+password.getText()+"','"+gender1+"','"+blood+"',"+Contact.getText()+",'"+city.getText()+"')");
-                    i++;
+
                       System.out.println(username.getText());
                   }
                 conn.close();
