@@ -61,7 +61,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         jLabel1.setBackground(java.awt.Color.white);
         jLabel1.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel1.setForeground(java.awt.Color.white);
-        jLabel1.setText("Amrita Hospitals");
+        jLabel1.setText("BPGC Hospital");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/icon.png"))); // NOI18N
 

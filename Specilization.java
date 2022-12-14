@@ -58,13 +58,13 @@ public class Specilization extends javax.swing.JFrame {
             }
         });
 
-        Neurologist.setBackground(java.awt.Color.gray);
-        Neurologist.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
-        Neurologist.setForeground(java.awt.Color.white);
-        Neurologist.setText("Neurologist");
+//        Neurologist.setBackground(java.awt.Color.gray);
+//        Neurologist.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
+//        Neurologist.setForeground(java.awt.Color.white);
+//        Neurologist.setText("Neurologist");
         Neurologist.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NeurologistActionPerformed(evt);
+//                NeurologistActionPerformed(evt);
             }
         });
 
@@ -88,13 +88,13 @@ public class Specilization extends javax.swing.JFrame {
             }
         });
 
-        Ophthalmologist.setBackground(java.awt.Color.gray);
-        Ophthalmologist.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
-        Ophthalmologist.setForeground(java.awt.Color.white);
-        Ophthalmologist.setText("Ophthalmologist");
+//        Ophthalmologist.setBackground(java.awt.Color.gray);
+//        Ophthalmologist.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
+//        Ophthalmologist.setForeground(java.awt.Color.white);
+//        Ophthalmologist.setText("Ophthalmologist");
         Ophthalmologist.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OphthalmologistActionPerformed(evt);
+//                OphthalmologistActionPerformed(evt);
             }
         });
 
@@ -102,7 +102,7 @@ public class Specilization extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/Cardilogy.jpeg"))); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/cole-eye-services.jpg"))); // NOI18N
+//        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/cole-eye-services.jpg"))); // NOI18N
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/lungs.jpeg"))); // NOI18N
 
@@ -112,7 +112,7 @@ public class Specilization extends javax.swing.JFrame {
 
         label1.setFont(new java.awt.Font("Dialog", 3, 48)); // NOI18N
         label1.setForeground(java.awt.Color.white);
-        label1.setText("Amrita Hospitals");
+        label1.setText("BPGC Hospital");
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/icon.png"))); // NOI18N
 
@@ -153,7 +153,7 @@ public class Specilization extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/Brain.jpeg"))); // NOI18N
+//        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/Brain.jpeg"))); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Ubuntu", 1, 30)); // NOI18N
         jLabel8.setText("Select Specialization");
@@ -211,9 +211,9 @@ public class Specilization extends javax.swing.JFrame {
                                         .addGap(426, 426, 426)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel4)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(58, 58, 58)
-                                        .addComponent(Ophthalmologist))
+//                                    .addGroup(layout.createSequentialGroup()
+//                                        .addGap(58, 58, 58)
+//                                        .addComponent(Ophthalmologist))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(13, 13, 13)
                                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))))))
@@ -221,7 +221,7 @@ public class Specilization extends javax.swing.JFrame {
                         .addGap(906, 906, 906)
                         .addComponent(Gastroenterologist)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Neurologist, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+//                        .addComponent(Neurologist, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(59, 59, 59)))
                 .addGap(62, 62, 62))
         );
@@ -245,7 +245,7 @@ public class Specilization extends javax.swing.JFrame {
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(7, 7, 7)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Neurologist, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+//                            .addComponent(Neurologist, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Gastroenterologist, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -261,8 +261,8 @@ public class Specilization extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Otolaryngologist, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Pulmonologist, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Ophthalmologist, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Pulmonologist, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+//                    .addComponent(Ophthalmologist, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(81, Short.MAX_VALUE))
         );
 
@@ -322,7 +322,7 @@ public class Specilization extends javax.swing.JFrame {
          docname = "Neurologist";
         Selectdoctor s = new Selectdoctor();
         dispose();
-        s.setVisible(true);
+        s.setVisible(false);
     }//GEN-LAST:event_NeurologistActionPerformed
 
     private void OtolaryngologistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OtolaryngologistActionPerformed

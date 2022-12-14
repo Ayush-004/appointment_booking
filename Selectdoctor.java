@@ -182,10 +182,10 @@ public class Selectdoctor extends javax.swing.JFrame {
                             Class.forName("com.mysql.cj.jdbc.Driver");
                             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                             Statement stmt=conn.createStatement();  
-                            ResultSet rp = stmt.executeQuery("select * from doctor where doc_id="+r);
+                            ResultSet rp = stmt.executeQuery("select * from doctor where doc_id="+1);
                             rp.next();
                             money = rp.getInt(5);
-                           stmt.executeUpdate("insert into appointmentbooking(id,doc_id,dateofapp,time)"+ "values("+Login.id1+","+r+",'"+date2+"','"+rp.getTime(6)+"')");
+                           stmt.executeUpdate("insert into appointmentbooking(id,doc_id,dateofapp,time)"+ "values("+Login.id1+","+1+",'"+date2+"','"+rp.getTime(6)+"')");
                            Payment f = new Payment();
                             dispose();
                             f.setVisible(true);
@@ -249,7 +249,7 @@ public class Selectdoctor extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
-        jLabel3.setText("Amrita Hospital ");
+        jLabel3.setText("BPGC Hospital ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -257,7 +257,7 @@ public class Selectdoctor extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel2)
-                .addGap(613, 613, 613)
+                .addGap(500, 500, 500)
                 .addComponent(jLabel3)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -287,9 +287,9 @@ public class Selectdoctor extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
+                .addContainerGap(34, Short.MAX_VALUE)
                 .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34))
+                .addGap(16, 16, 16))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

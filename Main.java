@@ -60,7 +60,7 @@ public class Main extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel1.setForeground(java.awt.Color.white);
-        jLabel1.setText("          Amrita Hospitals ");
+        jLabel1.setText("          BPGC Hospital ");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/icon.png"))); // NOI18N
 
@@ -88,7 +88,7 @@ public class Main extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/43.jpg"))); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
-        jLabel4.setText("Specializations available in Amrita Hospitals are: ");
+        jLabel4.setText("Specializations available in BPGC Hospital are: ");
 
         jLabel5.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
         jLabel5.setText("*Cardiologist");
@@ -96,8 +96,8 @@ public class Main extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
         jLabel6.setText("*Gastroenterologist");
 
-        jLabel7.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
-        jLabel7.setText("*Neurologist");
+//        jLabel7.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
+//        jLabel7.setText("*Neurologist");
 
         jLabel8.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
         jLabel8.setText("*Pulmonologist");
@@ -105,8 +105,8 @@ public class Main extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
         jLabel9.setText("*Otolaryngologist");
 
-        jLabel10.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
-        jLabel10.setText("*Ophthalmologist");
+//        jLabel10.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
+//        jLabel10.setText("*Ophthalmologist");
 
         jToggleButton2.setBackground(java.awt.Color.gray);
         jToggleButton2.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N

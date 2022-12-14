@@ -170,7 +170,7 @@ public class ManageProfile extends javax.swing.JFrame{
         jButton2.setText("Change Password");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+//                jButton2ActionPerformed(evt);
             }
         });
 
@@ -370,6 +370,8 @@ public class ManageProfile extends javax.swing.JFrame{
     /**
      * @param args the command line arguments
      */
+
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -403,7 +405,7 @@ public class ManageProfile extends javax.swing.JFrame{
                 //stmt.executeQuery("use doctorappointment");
                 //ResultSet rs=stmt.executeQuery("select * from user");
                 //System.out.println(user1 + "MP");
-                ResultSet rp = stmt.executeQuery("select * from user where username='"+Login.username1+"'");
+                ResultSet rp = stmt.executeQuery("select * from user where username='"+Login.username.getText()+"'");
                 rp.next();
                System.out.println(rp.getString(3));
                 conn.close();

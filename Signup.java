@@ -74,7 +74,7 @@ public class Signup extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel10.setForeground(java.awt.Color.white);
-        jLabel10.setText("            Amrita Hospital ");
+        jLabel10.setText("            BPGC Hospital ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

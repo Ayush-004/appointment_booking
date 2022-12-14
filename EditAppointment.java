@@ -87,7 +87,7 @@ public class EditAppointment extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Amrita Hospitals ");
+        jLabel2.setText("BPGC Hospital ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -128,7 +128,7 @@ public class EditAppointment extends javax.swing.JFrame {
 
         jLabel8.setText("Thanking you,");
 
-        jLabel9.setText("Amrita Hospitals");
+        jLabel9.setText("BPGC Hospital");
 
         jButton1.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
         jButton1.setText("Confirm Appointment");

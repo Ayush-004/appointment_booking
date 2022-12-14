@@ -50,7 +50,7 @@ public class ChooseAppointment extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Amrita Hospitals ");
+        jLabel2.setText("BPGC Hospital ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -73,20 +73,20 @@ public class ChooseAppointment extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(java.awt.Color.pink);
+//        jPanel2.setBackground(java.awt.Color.pink);
 
-        jPanel3.setBackground(java.awt.Color.lightGray);
+//        jPanel3.setBackground(java.awt.Color.lightGray);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/amma.jpg"))); // NOI18N
+//        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/amma.jpg"))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Ubuntu", 2, 17)); // NOI18N
-        jLabel4.setText("Healthcare with a Heart : Our founder, Sri Mata Amritananadamayi Devi (known as AMMA), envisioned creating a not-for-profit top hospital in");
-
-        jLabel5.setFont(new java.awt.Font("Ubuntu", 2, 17)); // NOI18N
-        jLabel5.setText("Kerala, India where the poor could have access to advanced medical care in an atmosphere of love and compassion. Amrita Institute of Medical");
-
-        jLabel6.setFont(new java.awt.Font("Ubuntu", 2, 17)); // NOI18N
-        jLabel6.setText("Sciences is now a world-class institution of medicine, academics, and research.");
+//        jLabel4.setFont(new java.awt.Font("Ubuntu", 2, 17)); // NOI18N
+//        jLabel4.setText("Healthcare with a Heart : Our founder, Sri Mata Amritananadamayi Devi (known as AMMA), envisioned creating a not-for-profit top hospital in");
+//
+//        jLabel5.setFont(new java.awt.Font("Ubuntu", 2, 17)); // NOI18N
+//        jLabel5.setText("Kerala, India where the poor could have access to advanced medical care in an atmosphere of love and compassion. Amrita Institute of Medical");
+//
+//        jLabel6.setFont(new java.awt.Font("Ubuntu", 2, 17)); // NOI18N
+//        jLabel6.setText("Sciences is now a world-class institution of medicine, academics, and research.");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -153,11 +153,11 @@ public class ChooseAppointment extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
         jButton3.setText("Next Appointments");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
+//        jButton3.addActionListener(new java.awt.event.ActionListener() {
+////            public void actionPerformed(java.awt.event.ActionEvent evt) {
+////                jButton3ActionPerformed(evt);
+////            }
+//        });
 
         jButton5.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
         jButton5.setText("Logout");

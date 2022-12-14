@@ -58,7 +58,7 @@ public class Payment extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Amrita Hospitals ");
+        jLabel2.setText("BPGC Hospital ");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

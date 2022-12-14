@@ -180,7 +180,7 @@ public class ViewAppointments extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Amrita Hospitals");
+        jLabel2.setText("BPGC Hospital");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

@@ -25,7 +25,7 @@ public class FixAppointment extends javax.swing.JFrame {
            Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
-                ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id=(select max(appoint_id) from appointmentbooking)");
+                ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id=1 from appointmentbooking)");
                 rp.next();
                 int nod = rp.getInt(2),nop = rp.getInt(3);
                 //System.out.println(nod+"hi");
@@ -90,7 +90,7 @@ public class FixAppointment extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("             Amrita Hospital ");
+        jLabel2.setText("             BPGC Hospital ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -114,7 +114,7 @@ public class FixAppointment extends javax.swing.JFrame {
         jPanel2.setBackground(java.awt.Color.cyan);
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        jLabel3.setText("Namah Shivaya !!");
+//        jLabel3.setText("Namah Shivaya !!");
 
         jLabel4.setText("Dear, ");
 
@@ -132,7 +132,7 @@ public class FixAppointment extends javax.swing.JFrame {
 
         jLabel8.setText("Thank You, ");
 
-        jLabel9.setText("Amrita Hospitals.");
+        jLabel9.setText("BPGC Hospital.");
 
         jLabel10.setText("at");
 

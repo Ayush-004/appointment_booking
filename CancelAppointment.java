@@ -27,7 +27,7 @@ public class CancelAppointment extends javax.swing.JFrame {
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();
                // int y=0;
-                    ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id="+ViewAppointments.r);
+                    ResultSet rp = stmt.executeQuery("select * from appointmentbooking where appoint_id="+1);
                     rp.next();
                     nor = rp.getInt(2);
                     appid = rp.getInt(1);
@@ -78,7 +78,7 @@ public class CancelAppointment extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 3, 48)); // NOI18N
         jLabel1.setForeground(java.awt.Color.white);
-        jLabel1.setText("Amrita Hospitals");
+        jLabel1.setText("BPGC Hospital");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onlinedoctorappointmentsystem/icon.png"))); // NOI18N
 
@@ -106,7 +106,7 @@ public class CancelAppointment extends javax.swing.JFrame {
         jPanel2.setBackground(java.awt.Color.red);
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        jLabel3.setText("Namah Shivaya !!");
+//        jLabel3.setText("Namah Shivaya !!");
 
         jLabel4.setText("Your upcoming Appointment is on");
 
@@ -128,7 +128,7 @@ public class CancelAppointment extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setText("Amrita Hospitals");
+        jLabel8.setText("BPGC Hospital");
 
         jLabel9.setText("Thanking you,");
 
