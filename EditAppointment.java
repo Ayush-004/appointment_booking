@@ -112,17 +112,16 @@ public class EditAppointment extends javax.swing.JFrame {
         jPanel3.setBackground(java.awt.Color.lightGray);
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 20)); // NOI18N
-        jLabel3.setText("Namah Shivaya !!");
 
-        jLabel4.setText("Your Appointment is booked on ");
+        jLabel4.setText("Your Appointment is booked, if you want");
 
-        doa.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
+//        doa.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
+//
+//        jLabel6.setText("with");
+//
+//        nod.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
 
-        jLabel6.setText("with");
-
-        nod.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
-
-        jLabel5.setText(", if you want ");
+//        jLabel5.setText(", ");
 
         jLabel7.setText("to change the Date of Appointment, Select the date and press the confirm button.");
 

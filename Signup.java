@@ -498,24 +498,7 @@ public class Signup extends javax.swing.JFrame {
         //</editor-fold>
        
         System.out.println("signup");
-//        try {
-//           Class.forName("com.mysql.jdbc.Driver");
-//                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctorappointment","raghs","root");
-//                Statement stmt=conn.createStatement();  
-//                //stmt.executeQuery("use doctorappointment");
-//                //ResultSet rs=stmt.executeQuery("select * from user");
-////                while(rs.next())
-////                {
-////                    System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3)); 
-//                  if(t==1)
-//                  {
-//                    stmt.executeUpdate("insert into user(username,password)"+ "values('"+ username1 + "','"+pass+"')");
-//                  }
-//                conn.close();
-//        }
-//         catch (Exception e) {
-//                    e.printStackTrace();
-//		}
+//
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

@@ -32,7 +32,7 @@ public class ManageProfile extends javax.swing.JFrame{
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
                
-                ResultSet rp = stmt.executeQuery("select * from user where username='"+user1+"'");
+                ResultSet rp = stmt.executeQuery("select * from user where username='"+ wuser.getText()+"' + '"+ wgender.getText()+"'+ '"+ wbg.getText()+"'+ '"+ wcontact.getText()+"'+ '"+ wuser.getText()+"'");
                 rp.next();
               
                String gen = rp.getString(4);
@@ -339,19 +339,13 @@ public class ManageProfile extends javax.swing.JFrame{
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        //System.out.println(Login.username1);
+
         Main m = new Main();
         dispose();
         m.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        ii=1;
-        ForgotPassword fp = new ForgotPassword();
-        dispose();
-        fp.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -373,38 +367,13 @@ public class ManageProfile extends javax.swing.JFrame{
 
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html **/
-//         Login l = new Login();
-//        System.out.println(l.username1);
-         
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ManageProfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ManageProfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ManageProfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ManageProfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+
         Login lo = new Login();
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=UTC","root","Pass@word");
                 Statement stmt=conn.createStatement();  
-                //stmt.executeQuery("use doctorappointment");
-                //ResultSet rs=stmt.executeQuery("select * from user");
-                //System.out.println(user1 + "MP");
+
                 ResultSet rp = stmt.executeQuery("select * from user where username='"+Login.username.getText()+"'");
                 rp.next();
                System.out.println(rp.getString(3));
@@ -420,11 +389,9 @@ public class ManageProfile extends javax.swing.JFrame{
                 new ManageProfile().setVisible(true);
             }
         });
-                //ManageProfile l = new ManageProfile();
-       // System.out.println(l.user1);
+
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -448,5 +415,5 @@ public class ManageProfile extends javax.swing.JFrame{
     private javax.swing.JLabel wcontact;
     private javax.swing.JLabel wgender;
     private javax.swing.JLabel wuser;
-    // End of variables declaration//GEN-END:variables
+
 }

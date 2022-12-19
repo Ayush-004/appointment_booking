@@ -7,18 +7,18 @@ package onlinedoctorappointmentsystem;
 import com.toedter.calendar.JCalendar;
 
 import java.util.*;
-import java.awt.Color;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javax.swing.BorderFactory;
+
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
-import static onlinedoctorappointmentsystem.ManageProfile.user1;
+
 import java.text.SimpleDateFormat;
 import java.sql.Time;
 //import static onlinedoctorappointmentsystem.Login;
@@ -49,18 +49,7 @@ public class Selectdoctor extends javax.swing.JFrame {
        
       
        
-//        for(int i=0;i<10;i++)
-//        {
-//            array[i] = new JLabel("raghs"+i);
-//            array[i].setText("i"+i);
-//            this.add(array[i]);
-//            array[i].setOpaque(true);
-//            array[i].setBounds(x, y, 40, 40);
-//           // array[i].setBackground(Color.CYAN);
-//            //array[i].setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
-//            x += 140;
 //
-//           // System.out.println(array[i].toString());
 //        }
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
@@ -70,18 +59,17 @@ public class Selectdoctor extends javax.swing.JFrame {
                 x=70;
                 w=260;
                 y=250;
-               // name1.setText(" " );
+
                 while(rp.next())
                 {
-//                    rp.next();
-//                    rp.previous();
+//
                     JLabel name2 = new JLabel();
                     name2.setFont(new java.awt.Font("Ubuntu", 1, 18));
                     name2.setText("Name : ");
                     this.add(name2);
                     name2.setOpaque(true);
                     name2.setBounds(x,y,100,50);
-                    //y+=50
+
                     
                     JLabel name1 = new JLabel();
                     name1.setFont(new java.awt.Font("Ubuntu", 1, 18));
@@ -89,7 +77,7 @@ public class Selectdoctor extends javax.swing.JFrame {
                     this.add(name1);
                     name1.setOpaque(true);
                     name1.setBounds(w, y, 200, 50);
-                    //System.out.println(rp.getString(2));
+
                     y+=45;
                   
                     JLabel time2 = new JLabel();
@@ -389,7 +377,7 @@ public class Selectdoctor extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -412,7 +400,7 @@ public class Selectdoctor extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Selectdoctor().setVisible(true);

@@ -128,9 +128,7 @@ public class ViewAppointments extends javax.swing.JFrame {
                     public void actionPerformed(ActionEvent e){  
                     String oo = b1.getText();
                     int h = oo.length();
-                    //char ch = getCharFromString(o, h-1); 
-                   // System.out.println(h);
-                    //System.out.println(h);
+
                     if(h==19)
                     {
                         r = oo.charAt(h-1) - '0';

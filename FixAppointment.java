@@ -114,19 +114,12 @@ public class FixAppointment extends javax.swing.JFrame {
         jPanel2.setBackground(java.awt.Color.cyan);
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-//        jLabel3.setText("Namah Shivaya !!");
 
-        jLabel4.setText("Dear, ");
 
-        nameofpat.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
-
-        jLabel5.setText(", your appointment is confirmed with ");
+        jLabel5.setText("Your appointment is confirmed, ");
 
         nameofdoctor.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
 
-        jLabel6.setText("on ");
-
-        timeofappointment.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
 
         jLabel7.setText(" ,please make sure you reach before 15 minutes.");
 
@@ -134,7 +127,7 @@ public class FixAppointment extends javax.swing.JFrame {
 
         jLabel9.setText("BPGC Hospital.");
 
-        jLabel10.setText("at");
+//        jLabel10.setText("at");
 
         time.setFont(new java.awt.Font("Ubuntu", 1, 17)); // NOI18N
 

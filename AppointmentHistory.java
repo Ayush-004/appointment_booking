@@ -36,7 +36,7 @@ public class AppointmentHistory extends javax.swing.JFrame {
                 {
                     JLabel name2 = new JLabel();
                     name2.setFont(new java.awt.Font("Ubuntu", 1, 17));
-                    name2.setText("You had a Appointment with "+rp.getString(1)+" on "+rp.getString(2));
+                    name2.setText("You have a Appointment with "+rp.getString(1)+" on "+rp.getString(2));
                     this.add(name2);
                     name2.setOpaque(true);
                     name2.setBounds(x,y,600,50);
@@ -111,7 +111,7 @@ public class AppointmentHistory extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 32)); // NOI18N
-        jLabel3.setText("Your Previous Appointments");
+        jLabel3.setText("Your Next Appointments");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
